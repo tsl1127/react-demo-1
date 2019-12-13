@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open",
     "build": "webpack"
   },
   "repository": {
@@ -19,9 +20,17 @@
   },
   "homepage": "https://github.com/tsl1127/react-demo-1#readme",
   "devDependencies": {
+    "@types/react": "^16.9.16",
+    "@types/react-dom": "^16.9.4",
     "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^3.2.0",
     "typescript": "^3.7.3",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
