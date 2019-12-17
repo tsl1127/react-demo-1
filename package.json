@@ -5,7 +5,7 @@
   "main": "dist/lib/index.js",
   "types": "dist/lib/index",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "cross-env NODE_ENV=test jest --config=jest.config.js --runInBand",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js --open",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js"
   },
@@ -21,11 +21,19 @@
   },
   "homepage": "https://github.com/tsl1127/react-demo-1#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@types/jest": "^24.0.23",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "@types/react-test-renderer": "^16.9.1",
     "awesome-typescript-loader": "^5.2.1",
+    "babel-jest": "^24.9.0",
     "cross-env": "^6.0.3",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.12.0",
+    "ts-jest": "^24.2.0",
     "typescript": "^3.7.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
