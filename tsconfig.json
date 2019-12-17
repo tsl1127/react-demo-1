@@ -8,7 +8,7 @@
         //     "examples":["examples/"]
         // },
         // "rootDirs": ["include"],
-        // "outDir": "dist",
+        "outDir": "dist",
         "module": "esnext",
         "target": "es5",
         "lib": ["es6","DOM"],
