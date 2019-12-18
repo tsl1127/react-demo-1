@@ -1,5 +1,6 @@
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 
 module.exports = {
     entry: {
@@ -20,14 +21,18 @@ module.exports = {
             {
                 test:/\.tsx?$/,
                 loader:'awesome-typescript-loader'
+            },
+            {
+                test:/\.svg$/,
+                loader:'svg-sprite-loader'
             }
         ]
     },
     // plugins:[
     //     new HtmlWebpackPlugin(
     //         {
-    //             title:'轮子',
-    //             template:'index.html'
+    //             title:'lunzi',
+    //             template:path.join(__dirname,'index.html')
     //         }
     //     )
     // ],

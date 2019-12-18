@@ -1,13 +1,14 @@
 const base = require('./webpack.config')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
+const htmlWebpackPlugin = require('html-webpack-plugin')  //这里不能取名为大写的HtmlWebpackPlugin,原因未知
 
 module.exports = Object.assign({}, base, {
     mode:'development',
     plugins:[
-        new HtmlWebpackPlugin(
+        new htmlWebpackPlugin(
             {
-                // title:'轮子',
-                template:'index.html'
+                title:'lunzi',
+                template:path.join(__dirname,'index.html')
             }
         )
     ],
