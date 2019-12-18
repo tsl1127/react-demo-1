@@ -7,6 +7,7 @@ import Icon from './icon'
 // ReactDOM.render(<Button></Button>,document.body)
 ReactDOM.render(<div>
     <Icon name="wechat"></Icon>
+    <Icon name="pay"></Icon>
 </div>,document.querySelector('#root'))
 // const a = 1
 // export {Button, a}
