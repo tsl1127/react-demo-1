@@ -2,8 +2,10 @@ import React from 'react'
 // import wechat from './icons/wechat.svg'
 // console.log(wechat)
 
-import  './icons/wechat.svg'
-import './icons/pay.svg'
+// import  './icons/wechat.svg'
+// import './icons/pay.svg'
+
+import './importIcons'
 
 interface IconProps {
     name: string;
