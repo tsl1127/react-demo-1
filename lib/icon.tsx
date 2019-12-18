@@ -6,6 +6,7 @@ import React from 'react'
 // import './icons/pay.svg'
 
 import './importIcons'
+import './icon.scss'
 
 interface IconProps {
     name: string;
@@ -13,11 +14,9 @@ interface IconProps {
 
 const Icon:React.FunctionComponent<IconProps> = (props) => {
     return (
-    <span>
-        <svg>
+        <svg className='lunzi-icon'>
             <use xlinkHref={`#${props.name}`}></use>
         </svg>
-        </span>
     )
 }
 
