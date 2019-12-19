@@ -10,11 +10,13 @@ import './icon.scss'
 
 interface IconProps {
     name: string;
+    onClick: React.MouseEventHandler<SVGElement>  //svg元素的鼠标处理函数
+    // onClick: ()=>void
 }
 
 const Icon:React.FunctionComponent<IconProps> = (props) => {
     return (
-        <svg className='lunzi-icon'>
+        <svg className='lunzi-icon' onClick={props.onClick}>
             <use xlinkHref={`#${props.name}`}></use>
         </svg>
     )
