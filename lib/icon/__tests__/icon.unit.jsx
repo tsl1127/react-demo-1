@@ -1,6 +1,7 @@
 import renderer from 'react-test-renderer'
 import React from 'react'
 import Icon from '../icon'
+import {mount} from 'enzyme'
 
 describe('icon测试',()=>{
     it('是个svg',()=>{
@@ -8,6 +9,12 @@ describe('icon测试',()=>{
         expect(json).toMatchSnapshot()  //match快照,如果需要更新快照则npm test -- -u
     })
     it('测试onclick',()=>{
-        
+        let n = 1
+        const fn = ()=>{
+            n = 2
+        }
+        const c = mount(<Icon name="wechat" onClick={fn}></Icon>)
+        c.find('svg').simulate('click')
+        expect(n).toEqual(2)
     })
 })
