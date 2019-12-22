@@ -15,8 +15,8 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
     // onClick: (e:React.MouseEvent)=>void
 }
 
-const Icon:React.FunctionComponent<IconProps> = (props) => {
-    const {className, ...restProps } = props
+const Icon:React.FunctionComponent<IconProps> = ({className,name, ...restProps}) => {
+    // const {className,name, ...restProps } = props
     return (
         // <svg className={`lunzi-icon ${className? className:''}`} 
         <svg className={classes('lunzi-icon',className)} 
@@ -25,7 +25,7 @@ const Icon:React.FunctionComponent<IconProps> = (props) => {
         // onMouseEnter={props.onMouseEnter}
         {...restProps}
         >
-            <use xlinkHref={`#${props.name}`}></use>
+            <use xlinkHref={`#${name}`}></use>
         </svg>
     )
 }
