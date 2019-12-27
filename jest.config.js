@@ -8,8 +8,7 @@ module.exports = {
     ],
     coverageDirectory:'coverage',
     coverageReporters:['text','lcov'],
-    // reporters: ["default","jest-junit"], //分析报表
-    reporters:["default"],
+    reporters: ["default","jest-junit"], //分析报表
     globals:{
         'ts-jest':{
             tsConfig:'tsconfig.test.json',

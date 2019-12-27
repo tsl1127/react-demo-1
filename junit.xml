@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="9" failures="0" time="10.963">
-  <testsuite name="icon测试" errors="0" failures="0" skipped="0" timestamp="2019-12-27T07:27:55" time="8.034" tests="2">
-    <testcase classname="icon测试 是个svg" name="icon测试 是个svg" time="0.056">
-    </testcase>
-    <testcase classname="icon测试 测试onclick" name="icon测试 测试onclick" time="0.087">
+<testsuites name="jest tests" tests="9" failures="0" time="10.504">
+  <testsuite name="第二个测试用例" errors="0" failures="0" skipped="0" timestamp="2019-12-27T09:19:08" time="4.418" tests="1">
+    <testcase classname="第二个测试用例 1+2等于3" name="第二个测试用例 1+2等于3" time="0.006">
     </testcase>
   </testsuite>
-  <testsuite name="button测试" errors="0" failures="0" skipped="0" timestamp="2019-12-27T07:28:03" time="0.497" tests="1">
-    <testcase classname="button测试 是个div" name="button测试 是个div" time="0.003">
+  <testsuite name="button测试" errors="0" failures="0" skipped="0" timestamp="2019-12-27T09:19:08" time="4.515" tests="1">
+    <testcase classname="button测试 是个div" name="button测试 是个div" time="0.035">
     </testcase>
   </testsuite>
-  <testsuite name="classes测试" errors="0" failures="0" skipped="0" timestamp="2019-12-27T07:28:04" time="0.336" tests="5">
+  <testsuite name="icon测试" errors="0" failures="0" skipped="0" timestamp="2019-12-27T09:19:08" time="5.603" tests="2">
+    <testcase classname="icon测试 是个svg" name="icon测试 是个svg" time="0.023">
+    </testcase>
+    <testcase classname="icon测试 测试onclick" name="icon测试 测试onclick" time="0.062">
+    </testcase>
+  </testsuite>
+  <testsuite name="classes测试" errors="0" failures="0" skipped="0" timestamp="2019-12-27T09:19:12" time="1.601" tests="5">
     <testcase classname="classes测试 接受一个className" name="classes测试 接受一个className" time="0.001">
     </testcase>
-    <testcase classname="classes测试 接受二个className" name="classes测试 接受二个className" time="0.001">
+    <testcase classname="classes测试 接受二个className" name="classes测试 接受二个className" time="0">
     </testcase>
     <testcase classname="classes测试 接受带有undefined" name="classes测试 接受带有undefined" time="0">
     </testcase>
     <testcase classname="classes测试 接受多个值" name="classes测试 接受多个值" time="0">
     </testcase>
     <testcase classname="classes测试 什么都不传" name="classes测试 什么都不传" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="第二个测试用例" errors="0" failures="0" skipped="0" timestamp="2019-12-27T07:28:04" time="0.378" tests="1">
-    <testcase classname="第二个测试用例 1+2等于3" name="第二个测试用例 1+2等于3" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>
