@@ -57,7 +57,7 @@ jobs:
             path: test-results
       # # run tests!
       # - run: yarn test
-workflow:
+workflows:
   version: 2
   build_accept_deploy:
     jobs:
@@ -67,4 +67,4 @@ workflow:
             - test
       - test:
           requires: 
-            -prepare
+            - prepare
