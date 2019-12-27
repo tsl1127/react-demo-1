@@ -28,3 +28,20 @@ https://travis-ci.org/
 JEST_JUNIT_OUTPUT没有这个命令了
 换成JEST_JUNIT_OUTPUT_DIR
 
+npm 发包需要先登录npm
+npm login登录
+
+
+npm adduser  //用户名
+
+如果出现 Private mode enable, only admin can publish this module
+这需要把npm源从taobao源切到npm本身的源端
+npm config get registry
+npm config set registry http://registry.npmjs.org/ 
+
+ you must verify your email before publishing a new package: https://www.npmjs.com/email-edit
+这种是你的npm账户需要email验证
+
+
+
+
