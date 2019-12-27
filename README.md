@@ -24,3 +24,7 @@ https://travis-ci.org/
 还是用cicle ci
 选择linux测
 语言用node
+
+JEST_JUNIT_OUTPUT没有这个命令了
+换成JEST_JUNIT_OUTPUT_DIR
+
