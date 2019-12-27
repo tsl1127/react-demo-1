@@ -2,13 +2,14 @@ module.exports = {
     verbose:true,
     clearMocks: false,
     collectCoverage:true,//是否搜集测试覆盖率
-    // collectCoverageFrom: [
-    //     "{lib,include}/**/*.{js,jsx,ts,tsx}",
-    //     "!**/node_modules/**"
-    // ],
-    // coverageDirectory:'coverage',
-    // coverageReporters:['text','lcov'],
-    reporters: ["default","jest-junit"], //分析报表
+    collectCoverageFrom: [
+        "lib/**/*.{ts,tsx}",
+        "!**/node_modules/**"  //这是不测的目录
+    ],
+    coverageDirectory:'coverage',
+    coverageReporters:['text','lcov'],
+    // reporters: ["default","jest-junit"], //分析报表
+    reporters:["default"],
     globals:{
         'ts-jest':{
             tsConfig:'tsconfig.test.json',
