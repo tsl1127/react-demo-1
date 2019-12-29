@@ -68,3 +68,13 @@ sh ./deploy.sh patch
 
 npm version $1 && git push
 相与 版本升级成功了再push提交
+
+在circleci的status badges里有说明如何设置小徽标，都是markdown语法
+
+
+[![CircleCI](https://circleci.com/gh/tsl1127/react-demo-1.svg?style=svg)](https://circleci.com/gh/tsl1127/react-demo-1)
+
+
+https://badge.fury.io/for/js/tsl-react-demo-1
+
+[![npm version](https://badge.fury.io/js/tsl-react-demo-1.svg)](https://badge.fury.io/js/tsl-react-demo-1)
