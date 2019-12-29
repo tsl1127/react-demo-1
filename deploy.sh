@@ -1,3 +1,3 @@
 # npm version patch
-npm vesion $1
+npm version $1
 npm push
