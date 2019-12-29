@@ -43,5 +43,24 @@ npm config set registry http://registry.npmjs.org/
 这种是你的npm账户需要email验证
 
 
+npm version patch等有命令可以自动升级版本号，详情见npm官网
 
+删除tag
+git tag -d tag号
 
+版本号0.0.0
+第一位叫major
+第二位叫minor
+第三位叫patch
+
+升级第3位API不变，修复了bug
+升级第2位API有变化，变化不大，完全不影响现有代码
+升级第1位API变化很大，影响现有代码
+
+运行sh文件命令
+sh ./deploy.sh
+
+npm version $1
+$1意思就是arguments[0]，参数的第一个
+
+sh ./deploy.sh patch
