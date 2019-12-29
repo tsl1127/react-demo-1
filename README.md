@@ -64,3 +64,7 @@ npm version $1
 $1意思就是arguments[0]，参数的第一个
 
 sh ./deploy.sh patch
+
+
+npm version $1 && git push
+相与 版本升级成功了再push提交
