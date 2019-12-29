@@ -4,11 +4,14 @@ const htmlWebpackPlugin = require('html-webpack-plugin')  //这里不能取名�
 
 module.exports = Object.assign({}, base, {
     mode:'development',
+    entry:{
+        example: './example.tsx'
+    },
     plugins:[
         new htmlWebpackPlugin(
             {
                 title:'lunzi',
-                template:path.join(__dirname,'index.html')
+                template:path.join(__dirname,'example.html')
             }
         )
     ],
