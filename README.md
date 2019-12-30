@@ -78,3 +78,8 @@ npm version $1 && git push
 https://badge.fury.io/for/js/tsl-react-demo-1
 
 [![npm version](https://badge.fury.io/js/tsl-react-demo-1.svg)](https://badge.fury.io/js/tsl-react-demo-1)
+
+
+fragment标签的用途：
+使用的时候带有div
+渲染的时候则不会有这个div——目的：可以省一个div
