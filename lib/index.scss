@@ -1,0 +1,21 @@
+[class^=lunzi-] {  //以lunzi-开头的都加如下样式
+    box-sizing: border-box;
+    // font-size: 14px;
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+button {
+    box-sizing: border-box;
+    height: 32px;
+    margin: 0 4px;
+    border-radius: 4px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
