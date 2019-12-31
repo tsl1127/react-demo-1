@@ -2,9 +2,13 @@ import React from 'react'
 import { scopedClassMaker } from '../classes'
 const sc = scopedClassMaker('lunzi-layout')
 
-const Footer: React.FunctionComponent = () => {
+interface Props extends React.HTMLAttributes<HTMLElement> {
+}
+
+const Footer: React.FunctionComponent<Props> = (props) => {
+    const { className, ...rest } = props
     return (
-        <div className={sc('footer')}>footer</div>
+        <div className={sc('footer', { extra: className })} {...rest}>footer</div>
     )
 }
 
