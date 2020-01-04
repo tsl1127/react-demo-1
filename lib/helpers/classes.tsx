@@ -15,8 +15,8 @@ interface x {
     [K: string]: boolean  //key为string，value为布尔的任意对象
 }
 
-function scopedClassMaker(prefix: string) {
-    return (name: string | x, options?: y) => 
+const scopedClassMaker = (prefix: string) =>
+    (name: string | x, options?: y) =>
         Object
             .entries(name instanceof Object ? name : { [name]: name })
             .filter(kv => kv[1] !== false)
@@ -26,6 +26,5 @@ function scopedClassMaker(prefix: string) {
             })
             .concat(options && options.extra || [])
             .join(' ')
-}
 
 export { scopedClassMaker }
