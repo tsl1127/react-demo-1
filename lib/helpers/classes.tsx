@@ -1,6 +1,6 @@
 // const isTrusy = value=>value
 
-function classes (...names:(string|undefined)[]) {
+function classes(...names: (string | undefined)[]) {
     return names.filter(Boolean).join(' ')
 }
 
@@ -16,23 +16,17 @@ interface x {
 }
 
 function scopedClassMaker(prefix: string) {
-    return function (name?: string | x, options?: y) {
-        //name= {hasAside: true, active: false,x:ture,y:false}
-        let name2
-        let result
-        if (typeof name === 'string' || name === undefined) {
-            name2 = name
-            result = [prefix, name2].filter(Boolean).join('-')
-        } else {
-            name2 = Object.entries(name).filter(kv => kv[1]).map(kv => kv[0])
-            //['hasAside','x']
-            result = name2.map(m => {
-                return [prefix, m].filter(Boolean).join('-')
-            }).join(' ')
-            //['lunzi-layout-hasAside','lunzi-layout-x']
-            // '.lunzi-layout-hasAside .lunzi-layout-x'
+    return function (name: string | x, options?: y) {
+        const namesObject = (typeof name === 'string' || name === undefined) ? { [name]: name } : name
+        const result = Object
+            .entries(namesObject)
+            .filter(kv => kv[1] !== false)
+            .map(kv => kv[0])
+            .map(name => {
+                return [prefix, name].filter(Boolean).join('-')
+            })
+            .join(' ')
 
-        }
         if (options && options.extra) {
             return [result, options.extra].filter(Boolean).join(' ')
         } else {
