@@ -33,7 +33,7 @@ const Dialog: React.FunctionComponent<Props> = (props) => {
             <div className={x('mask')} onClick={onClickMask}>
 
             </div>
-            <div className={x()}>
+            <div className={x('')}>
                 <div className={x('close')} onClick={onClickClose}>
                     <Icon name="close"></Icon>
                 </div>
