@@ -16,23 +16,16 @@ interface x {
 }
 
 function scopedClassMaker(prefix: string) {
-    return function (name: string | x, options?: y) {
-        const namesObject = (typeof name === 'string' || name === undefined) ? { [name]: name } : name
-        const result = Object
-            .entries(namesObject)
+    return (name: string | x, options?: y) => 
+        Object
+            .entries(name instanceof Object ? name : { [name]: name })
             .filter(kv => kv[1] !== false)
             .map(kv => kv[0])
             .map(name => {
                 return [prefix, name].filter(Boolean).join('-')
             })
+            .concat(options && options.extra || [])
             .join(' ')
-
-        if (options && options.extra) {
-            return [result, options.extra].filter(Boolean).join(' ')
-        } else {
-            return result
-        }
-    }
 }
 
 export { scopedClassMaker }
