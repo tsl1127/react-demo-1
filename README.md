@@ -38,6 +38,7 @@ npm adduser  //用户名
 这需要把npm源从taobao源切到npm本身的源端
 npm config get registry
 npm config set registry http://registry.npmjs.org/ 
+npm config set registry https://registry.npm.taobao.org
 
  you must verify your email before publishing a new package: https://www.npmjs.com/email-edit
 这种是你的npm账户需要email验证
