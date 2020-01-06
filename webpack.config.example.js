@@ -28,7 +28,7 @@ module.exports = Object.assign({}, base, {
             {
                 title: 'lunzi',
                 template: 'example.html',
-                filename: 'example.html'
+                filename: 'index.html'
             }
         )
     ],
