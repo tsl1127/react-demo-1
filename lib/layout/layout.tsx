@@ -9,7 +9,7 @@ interface Props extends React.HTMLAttributes<HTMLElement> {
     // className: string
     children: ReactElement | Array<ReactElement>//必须在layout里使用元素
 }
-    //'length' in children只会返回true和false 如果用children.length则有可能为0
+//'length' in children只会返回true和false 如果用children.length则有可能为0
 const Layout: React.FunctionComponent<Props> = (props) => {
     const { className, ...rest } = props
     const children = props.children as Array<ReactElement>
@@ -21,10 +21,16 @@ const Layout: React.FunctionComponent<Props> = (props) => {
 
 
     return (
-        <div className={sc({'':true,'hasAside':hasAside}, { extra: className })} {...rest}>
+        <div className={sc({ '': true, 'hasAside': hasAside }, { extra: className })} {...rest}>
             {props.children}
         </div>
     )
 }
 
 export default Layout
+export { Layout }
+
+export { default as Header } from './header'
+export { default as Content } from './content'
+export { default as Aside } from './aside'
+export { default as Footer } from './footer'

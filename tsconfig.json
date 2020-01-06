@@ -41,7 +41,7 @@
         "*.js"
     ],
     "include": [
-        "types/**/*",
+        "types/custom.d.ts",
         "lib/**/*"
     ]
 }
