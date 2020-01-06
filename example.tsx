@@ -13,15 +13,15 @@ const logo = require('./logo.png')
 
 ReactDOM.render((
     <Router>
-        <Layout className='page'>
-            <Header>
-                <div className="log">
-                    <img src={logo.default} alt=''></img>
-                    lunzi
+        <Layout className='site-page'>
+            <Header className='site-header'>
+                <div className="site-logo">
+                    <img src={logo.default} alt='' width="48" height="48"></img>
+                    <span >lunzi</span>
             </div>
             </Header>
             <Layout>
-                <Aside>
+                <Aside className='site-aside'>
                     <h2>组件</h2>
                     <ul>
                         <li>
@@ -38,15 +38,15 @@ ReactDOM.render((
                         </li>
                     </ul>
                 </Aside>
-                <Content>
+                <Content className='site-main'>
                     <Route path="/icon" component={IconExample}></Route>
                     <Route path="/button" component={ButtonExample}></Route>
                     <Route path="/dialog" component={DialogExample}></Route>
                     <Route path="/layout" component={LayoutExample}></Route>
                 </Content>
             </Layout>
-            <Footer>
-                footer
+            <Footer className='site-footer'>
+                &copy; tsl
                 </Footer>
         </Layout>
     </Router>
