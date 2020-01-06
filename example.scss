@@ -17,6 +17,10 @@ ol {
   list-style: none;
 }
 
+pre {
+    font-family: 'Franklin Gothic Medium';
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -36,6 +40,7 @@ $border-color: #eeeeee;
 
 .site-page {
   background: #ffffff;
+  min-height: 100vh;
 }
 
 .site-header {
@@ -94,4 +99,9 @@ $border-color: #eeeeee;
   color: #666;
   padding: $padding 0;
   border-top: 1px solid $border-color;
+}
+
+
+.example {
+    padding:$padding 0;
 }
