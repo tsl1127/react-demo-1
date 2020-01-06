@@ -84,3 +84,6 @@ https://badge.fury.io/for/js/tsl-react-demo-1
 fragment标签的用途：
 使用的时候带有div
 渲染的时候则不会有这个div——目的：可以省一个div
+
+
+要想让代码部署在其他分支，这个次分支名称必须叫gh-pages——其他名字不行
